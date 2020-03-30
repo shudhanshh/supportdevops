@@ -339,7 +339,10 @@ div#preloader {
     z-index: 999;
 }
 .header-area {
-    background:rgba(255,255,255,0.8);
+    background: transparent !important;
+}
+.navbar-brand {
+    width: 65px;
 }
 .logo {
     display: block;
@@ -347,7 +350,7 @@ div#preloader {
 .logo a {
     display: inline-block;
     height: auto;
-    padding: 22px 0;
+    /* padding: 22px 0; */
 }
 .main-menu ul.navbar-nav li {
     float: left;
