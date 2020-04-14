@@ -154,7 +154,7 @@ body {
 }
 #scrollUp {
     background: #3078fb none repeat scroll 0 0;
-    border-radius: 2px;
+    border-radius: 40px;
     bottom: 15px;
     color: #fff;
     font-size: 24px;
@@ -164,6 +164,7 @@ body {
     text-align: center;
     transition: all 0.3s ease 0s;
     width: 40px;
+    margin-right: 65px;
 }
 #scrollUp:hover {
     background: #fff;
@@ -228,7 +229,13 @@ div#preloader {
 .section-headline {
     padding-bottom: 40px;
     position: relative;
+   
 }
+
+.section-headline h3{
+    color: white;
+}
+
 .section-headline h3 {
     font-size: 34px;
     max-width: 500px;
@@ -244,7 +251,7 @@ div#preloader {
 .section-headline.right-headline h3 {
     max-width: 100%;
     margin: 0px 0px 20px;
-    text-align: left;
+    text-align: center;
 }
 .white-headline h3{
    color:#fff; 
@@ -803,13 +810,13 @@ div#preloader {
 /*----------------------------------------*/
 /*  5. About area
 /*----------------------------------------*/
-.about-2 {
+/* .about-2 {
     background: url(img/devops-cycle.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     background-attachment: scroll;
-}
+} */
 .about-content {
     background: #062241;
     padding: 100px 70px 100px 100px;
@@ -3173,6 +3180,7 @@ ul, li {
     float: left;
     width: 100%;
     text-align: center;
+    background-color: black;
 }
 .pricing-columns .wrapper-full {
     position: relative;
@@ -3254,7 +3262,7 @@ ul, li {
 .pricing-columns #pricing-chart .plan a.sign-up, .pricing-columns-both #pricing-chart .plan a.sign-up {
   width: 100%;
     padding: 13px;
-    background-color: white;
+    background-color: #3078FB;
     border: 1px solid #e1e1e1;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -3264,7 +3272,7 @@ ul, li {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
-    color: #9e9e9e;
+    color: white;
     display: block;
     margin-bottom: 5px;
     font-size: 15px;
@@ -3279,7 +3287,7 @@ ul, li {
 .pricing-section .sign-up {
     padding: 17px 50px;
     text-transform: uppercase;
-    background-color: #93cc76;
+    background-color: #3078FB;
     color: white;
     letter-spacing: 0.1em;
     -webkit-border-radius: 3px;
@@ -3342,12 +3350,26 @@ ul, li {
 }
 .pricing-columns #pricing-chart .plan a.sign-up:hover, .pricing-columns-both #pricing-chart .plan a.sign-up:hover {
     border: 0;
-    color: #fff;
+    color: #6189FB,
     opacity: 0.8;
 }
 .hide{
   display: none;
 }
+
+#pricing-chart{
+    margin-left: 230px;
+}
+
+#toggleDiv{
+    display: none;
+}
+
+#toggleDivBtn:hover + #toggleDiv{
+    display: block;
+    transition-delay: ease-in 2s;
+}
+
 
 /*--------------------------------*/
 /* .End CSSf
